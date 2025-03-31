@@ -68,7 +68,6 @@ img {
   display: flex;
   gap: 40px;
 }
-/*heder-menu-iten*/
 
 .heder-menu-link {
   color: #2e2f42;
@@ -79,10 +78,13 @@ img {
   letter-spacing: 0.32px;
   padding: 24px 0;
   display: block;
-  position: relative;
-  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.heder-menu-link.current {
+  position: relative;
+  text-decoration: none;
+}
+
 .heder-menu-link::after {
   content: "";
   width: 100%;
@@ -93,12 +95,14 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
 }
+
 .heder-menu-link:hover {
   color: #404bbf;
 }
 .heder-menu-link:focus {
   color: #404bbf;
 }
+
 .header-adress {
   font-style: normal;
 }
@@ -283,7 +287,6 @@ img {
 .team-iten-icon {
   width: 40px;
   height: 40px;
-  margin-top: 8px;
 }
 .team-icon-soc {
   width: 100%;
@@ -325,6 +328,7 @@ img {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.32px;
   text-align: center;
+  margin-bottom: 8px;
 }
 /*-----OUR TEAM----*/
 /*-----Portfolio----*/
